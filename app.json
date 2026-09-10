@@ -11,7 +11,9 @@
       "supportsTablet": false
     },
     "android": {
-      "permissions": ["CAMERA", "READ_MEDIA_IMAGES", "WRITE_EXTERNAL_STORAGE"]
+      "package": "com.monochrome.qr",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"]
     },
     "web": {
       "favicon": "./assets/images/icon.png"
