@@ -1,5 +1,6 @@
 # Keep pnpm's supply-chain freshness protection enabled while allowing
 # a small set of transitive packages that may be published together with Expo.
+# The exclusions are limited to the packages rejected by the EAS build policy.
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - "@expo-google-fonts/material-symbols"
