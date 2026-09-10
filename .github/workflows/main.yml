@@ -25,6 +25,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
+      - name: Link EAS project
+        run: pnpm dlx eas-cli@latest init --force --non-interactive
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
       - name: Build APK with EAS
         run: pnpm dlx eas-cli@latest build --platform android --profile preview --non-interactive
         env:
