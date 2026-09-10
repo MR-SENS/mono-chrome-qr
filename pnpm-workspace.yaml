@@ -1,0 +1,8 @@
+# Keep pnpm's supply-chain freshness protection enabled while allowing
+# a small set of transitive packages that may be published together with Expo.
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - "@expo-google-fonts/material-symbols"
+  - "baseline-browser-mapping"
+  - "electron-to-chromium"
+  - "update-browserslist-db"
